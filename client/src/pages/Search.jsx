@@ -45,7 +45,7 @@ export default function Search() {
                 const data = await res.json();
                 setPosts(data.posts);
                 setLoading(false);
-                if (data.posts.length === 9) {
+                if (data.posts.length > 8) {
                     setShowMore(true);
                 } else {
                     setShowMore(false);
@@ -92,7 +92,7 @@ export default function Search() {
         if (res.ok) {
             const data = await res.json();
             setPosts([...posts, ...data.posts]);
-            if (data.posts.length === 9) {
+            if (data.posts.length > 8) {
                 setShowMore(true);
             } else {
                 setShowMore(false);
