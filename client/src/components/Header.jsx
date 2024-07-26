@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { toggleTheme } from '../redux/theme/themeSlice';
 import { signoutSuccess } from '../redux/user/userSlice';
 import { useEffect, useState } from 'react';
+import { DiAtom } from "react-icons/di";
 
 
 export default function Header() {
@@ -53,8 +54,10 @@ export default function Header() {
 
     return (
         <Navbar className='border-b-2'>
-            <Link to={"/"} className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold'>
-                <span className='px-2 py-1 rounded-xl bg-lime-500 text-xl text-white'>Ink<span className='px-0.5 text-xl rounded-lg text-black'>verse</span></span>
+            <Link to={"/"} className='flex self-center whitespace-nowrap text-sm sm:text-xl font-semibold'>
+                <div className='px-2 py-1 rounded-xl bg-blue-600 text-xl text-white inline-flex'>
+                    <span className='justify-center py-1 px-1'><DiAtom color='white' /></span>Ink<span className='px-0.5 text-xl rounded-lg text-black'>verse</span>
+                </div>
             </Link>
             <form onSubmit={handleSubmit}>
                 <TextInput

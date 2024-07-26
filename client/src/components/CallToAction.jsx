@@ -1,23 +1,26 @@
 import { Button } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 export default function CallToAction() {
     return (
-        <div className='flex flex-col sm:flex-row p-3 border border-teal-500 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center'>
-            <div className="flex-1 justify-center flex flex-col">
+        <div className='flex flex-col sm:flex-row p-3 border border-blue-700 justify-center items-center rounded-3xl text-center'>
+            <div className="flex-1 justify-center flex flex-col gap-2 pt-2">
                 <h2 className='text-2xl'>
-                    Want to learn more about JavaScript?
+                    Interested in publishing your own blogs and earning revenue?
                 </h2>
                 <p className='text-gray-500 my-2'>
-                    Checkout these resources with 100 JavaScript Projects
+                    Are you interested in writing blogs and sharing your thoughts? Join us and earn revenue from your posts.
                 </p>
-                <Button gradientDuoTone='purpleToPink' className='rounded-tl-xl rounded-bl-none'>
-                    <a href="https://www.100jsprojects.com" target='_blank' rel='noopener noreferrer'>
-                        100 JavaScript Projects
-                    </a>
-                </Button>
+
+                <Link to={'/projects'} target='_blank' rel='noopener noreferrer'>
+                    <Button gradientDuoTone='purpleToBlue' className='w-full rounded-xl'>
+                        Join us
+                    </Button>
+                </Link>
+
             </div>
             <div className="p-7 flex-1">
-                <img src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg" />
+                <img src="https://emarketinghacks.com/wp-content/uploads/2021/10/How-To-Start-A-Successful-Blog-2021.png" className='w-full object-cover rounded-md' />
             </div>
         </div>
     )
