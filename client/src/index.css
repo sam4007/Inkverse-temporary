@@ -64,3 +64,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Header active page color */
+.navbar-link-active {
+  color: #1C64F2; 
+}
