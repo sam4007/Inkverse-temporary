@@ -15,8 +15,8 @@ export default function FooterCom() {
                                 <span className='justify-center py-1 px-1'><DiAtom color='white' /></span>Ink<span className='px-0.5 text-xl rounded-lg text-black'>verse</span>
                             </div>
                         </Link>
-                        <p className='text-sm mt-1 text-black dark:text-white'>
-                            Your own blogging universe!
+                        <p className='text-lg pt-2 text-black dark:text-white'>
+                            Where Every Story Finds Its Home.
                         </p>
                         <hr className='border border-gray-300 dark:border-gray-700 mt-4 sm:hidden' />
                     </div>
