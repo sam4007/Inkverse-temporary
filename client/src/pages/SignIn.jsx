@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { signInStart, signInSuccess, signInFailure } from '../redux/user/userSlice';
 import OAuth from '../components/OAuth';
+import { DiAtom } from "react-icons/di";
 
 export default function SignIn() {
 
@@ -48,12 +49,14 @@ export default function SignIn() {
     <div className='min-h-screen mt-20'>
       <div className='flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5'>
         {/*left*/}
-        <div className='flex-1'>
-          <Link to={"/"} className='font-bold dark:text-white text-4xl'>
-            <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>Piyush's</span>Blog
+        <div className='flex-1 pr-20'>
+          <Link to={"/"} className='font-bold dark:text-white text-6xl'>
+            <div className='px-5 py-3 rounded-3xl bg-blue-600 text-6xl text-white inline-flex'>
+              <span className='justify-center py-1 px-1'><DiAtom color='white' /></span>Ink<span className='px-0.5 text-6xl rounded-lg text-black'>verse</span>
+            </div>
           </Link>
-          <p className='text-sm mt-5'>
-            Welcome to my Blog page!
+          <p className='text-xl mt-5 pl-5'>
+            Where Every Story Finds Its Home.
           </p>
         </div>
 
@@ -69,7 +72,7 @@ export default function SignIn() {
               <TextInput type='password' placeholder='***********' id='password' onChange={handleChange} />
             </div>
 
-            <Button gradientDuoTone='purpleToPink' type='submit' disabled={loading}>
+            <Button gradientDuoTone='purpleToBlue' type='submit' disabled={loading}>
               {
                 loading ? (
                   <>
@@ -84,7 +87,7 @@ export default function SignIn() {
 
           <div className='flex gap-2 text-sm mt-5'>
             <span>Don't have an account?</span>
-            <Link to={'/sign-up'} className='text-blue-500'>
+            <Link to={'/sign-up'} className='text-blue-600 dark:text-blue-500 hover:underline'>
               Sign up
             </Link>
           </div>
