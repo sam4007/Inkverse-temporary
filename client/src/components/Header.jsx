@@ -108,8 +108,8 @@ export default function Header() {
                     </Dropdown>
                 ) :
                     (
-                        <Link to={'/sign-in'}>
-                            <Button gradientDuoTone='purpleToBlue' outline>
+                        <Link to={'/sign-in'} className='pl-4'>
+                            <Button gradientDuoTone='purpleToBlue'>
                                 Sign In
                             </Button>
                         </Link>

@@ -65,6 +65,26 @@ body {
   }
 }
 
+.post-card-container-search {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  justify-content: center;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+@media (min-width: 640px) {
+  .post-card-container-search {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .post-card-container-search {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* Header active page color */
 .navbar-link-active {
   color: #1C64F2; 

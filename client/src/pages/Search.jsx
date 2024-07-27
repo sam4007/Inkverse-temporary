@@ -136,29 +136,33 @@ export default function Search() {
                             <option value='javascript'>JavaScript</option>
                         </Select>
                     </div>
-                    <Button type='submit' outline gradientDuoTone='purpleToPink'>
+                    <Button type='submit' gradientDuoTone='purpleToBlue'>
                         Apply Filters
                     </Button>
                 </form>
             </div>
             <div className='w-full'>
-                <h1 className='text-3xl font-semibold sm:border-b border-gray-500 p-3 mt-5 '>
-                    Posts results:
+                <h1 className='text-4xl font-bold text-center text-blue-700 dark:text-blue-500  p-3 mt-5 '>
+                    Search results:
                 </h1>
                 <div className='p-7 flex flex-wrap gap-4'>
                     {!loading && posts.length === 0 && (
                         <p className='text-xl text-gray-500'>No posts found.</p>
                     )}
                     {loading && <p className='text-xl text-gray-500'>Loading...</p>}
-                    {!loading &&
-                        posts &&
-                        posts.map((post) => <PostCard key={post._id} post={post} />)}
+                    <div className='max-w-xl mx-auto p-3 flex flex-col gap-4 py-7'>
+                        <div className='post-card-container-search'>
+                            {!loading &&
+                                posts &&
+                                posts.map((post) => <PostCard key={post._id} post={post} />)}
+                        </div>
+                    </div>
                     {showMore && (
                         <button
                             onClick={handleShowMore}
-                            className='text-teal-500 text-lg hover:underline p-7 w-full'
+                            className='text-lg text-blue-700 hover:underline text-center w-full'
                         >
-                            Show More
+                            show more...
                         </button>
                     )}
                 </div>
