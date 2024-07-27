@@ -19,8 +19,6 @@ export default function Home() {
 
   return (
     <div>
-
-
       <section className="bg-center bg-no-repeat bg-[url('https://static.vecteezy.com/system/resources/previews/021/554/938/non_2x/illustration-of-creative-web-design-creative-concept-for-web-banner-social-media-banner-business-presentation-marketing-material-vector.jpg')] bg-gray-700 bg-blend-multiply">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Discover Boundless Stories and Insights</h1>
@@ -71,17 +69,19 @@ export default function Home() {
       <div className='max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7'>
         {posts && posts.length > 0 && (
           <div className='flex flex-col gap-6'>
-            <h2 className='text-2xl font-semibold text-center text-black dark:text-white'>Recent Posts</h2>
-            <div className='flex flex-wrap gap-4 md:gap-10 justify-center'>
+
+            <hr className="w-full h-1 mx-auto  bg-gray-200  rounded mt-8 dark:bg-gray-700"></hr>
+            <h2 className='text-4xl pb-4 pt-3 font-bold text-center text-blue-800 dark:text-blue-400'>Latest Articles</h2>
+            <div className='post-card-container'>
               {posts.map((post) => (
                 <PostCard key={post._id} post={post} />
               ))}
             </div>
             <Link
               to={'/search'}
-              className='text-lg text-blue-600 hover:underline text-center'
+              className='text-lg text-blue-700 hover:underline text-center'
             >
-              View all posts
+              show more...
             </Link>
           </div>
         )}
