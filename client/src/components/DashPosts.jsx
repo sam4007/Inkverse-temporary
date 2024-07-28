@@ -67,23 +67,23 @@ export default function DashPosts() {
     }
 
     return (
-        <div className='table-auto overflow-x-scroll md:mx-auto p-3 scrollbar scrollbar-track-slate-100 scrollbar-thumb-slate-300 dark:scrollbar-track-slate-700 dark:scrollbar-thumb-slate-500'>
+        <div className=' w-full table-auto overflow-x-scroll md:mx-auto p-3 scrollbar scrollbar-track-slate-100 scrollbar-thumb-slate-300 dark:scrollbar-track-slate-700 dark:scrollbar-thumb-slate-500'>
             {currentUser.isAdmin && userPosts.length > 0 ? (
                 <>
                     <Table hoverable className='shadow-md'>
                         <Table.Head>
-                            <Table.HeadCell>Date updated</Table.HeadCell>
-                            <Table.HeadCell>Post image</Table.HeadCell>
-                            <Table.HeadCell>Post title</Table.HeadCell>
-                            <Table.HeadCell>Category</Table.HeadCell>
-                            <Table.HeadCell>Delete</Table.HeadCell>
-                            <Table.HeadCell>
+                            <Table.HeadCell className='text-center underline underline-offset-2 pt-8 text-blue-800 dark:text-blue-600 border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)]'>Date updated</Table.HeadCell>
+                            <Table.HeadCell className='text-center underline underline-offset-2 pt-8 text-blue-800 dark:text-blue-600 border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)]'>Post image</Table.HeadCell>
+                            <Table.HeadCell className='text-center underline underline-offset-2 pt-8 text-blue-800 dark:text-blue-600 border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)]'>Post title</Table.HeadCell>
+                            <Table.HeadCell className='text-center underline underline-offset-2 pt-8 text-blue-800 dark:text-blue-600 border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)]'>Category</Table.HeadCell>
+                            <Table.HeadCell className='text-center underline underline-offset-2 pt-8 text-blue-800 dark:text-blue-600 border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)]'>Delete</Table.HeadCell>
+                            <Table.HeadCell className='text-center underline underline-offset-2 pt-8 text-blue-800 dark:text-blue-600 border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)]'>
                                 <span>Edit</span>
                             </Table.HeadCell>
                         </Table.Head>
                         {userPosts.map((post) => (
                             <Table.Body className='divide-y'>
-                                <Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
+                                <Table.Row className='border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)]'>
                                     <Table.Cell>{new Date(post.updatedAt).toLocaleDateString()}</Table.Cell>
                                     <Table.Cell>
                                         <Link to={`/post/${post.slug}`} className='flex items-center gap-2'>
@@ -105,7 +105,7 @@ export default function DashPosts() {
                                         </span>
                                     </Table.Cell>
                                     <Table.Cell>
-                                        <Link className='text-teal-500 hover:underline' to={`/update-post/${post._id}`}>
+                                        <Link className='text-green-500 hover:underline' to={`/update-post/${post._id}`}>
                                             <span>
                                                 Edit
                                             </span>
@@ -117,8 +117,8 @@ export default function DashPosts() {
                         ))}
                     </Table>
                     {showMore && (
-                        <button className='w-full text-teal-500 self-center text-sm py-7' onClick={handleShowMore}>
-                            Show more
+                        <button className='w-full text-blue-600 self-center text-sm py-7 hover:underline' onClick={handleShowMore}>
+                            show more...
                         </button>   
                     )}
                 </>
