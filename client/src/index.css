@@ -31,7 +31,7 @@ body {
   }
   
   .post-content a {
-    color: rgb(73, 149, 199);
+    color: #1C64F2;
     text-decoration: none;
   }
   
@@ -39,8 +39,8 @@ body {
     text-decoration: underline;
   }
   
-  .dark .post-content a {
-    color: red;
+  .dark.post-content a {
+    color: #1C64F2;
   }
 
 
