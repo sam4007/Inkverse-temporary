@@ -102,7 +102,7 @@ export default function Search() {
 
     return (
         <div className='flex flex-col md:flex-row'>
-            <div className='p-7 border-b md:border-r md:min-h-screen border-gray-500'>
+            <div className='p-7 border-b md:border-r md:min-h-screen border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)] shadow-lg shadow-[rgb(179,179,179)] dark:shadow-[rgb(12,12,12)]'>
                 <form className='flex flex-col gap-8' onSubmit={handleSubmit}>
                     <div className='flex   items-center gap-2'>
                         <label className='whitespace-nowrap font-semibold'>
@@ -150,7 +150,7 @@ export default function Search() {
                 </form>
             </div>
             <div className='w-full'>
-                <h1 className='text-4xl font-bold text-center text-blue-700 dark:text-blue-500  p-3 mt-5 '>
+                <h1 className='text-4xl font-bold text-center text-blue-700 dark:text-blue-500 mt-10'>
                     Search results:
                 </h1>
                 <div className='p-7 flex flex-wrap gap-4'>

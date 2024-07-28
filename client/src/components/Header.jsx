@@ -53,7 +53,7 @@ export default function Header() {
     };
 
     return (
-        <Navbar className='border-b-2'>
+        <Navbar className='border-b-2 bg-[rgb(195,221,253)] dark:bg-[rgb(18,18,18)] border-[rgb(118,169,250)] md:border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] shadow-md shadow-[rgb(179,179,179)] dark:shadow-[rgb(12,12,12)]'>
             <Link to={"/"} className='flex self-center whitespace-nowrap text-sm sm:text-xl font-semibold'>
                 <div className='px-2 py-1 rounded-xl bg-blue-600 text-xl text-white inline-flex'>
                     <span className='justify-center py-1 px-1'><DiAtom color='white' /></span>Ink<span className='px-0.5 text-xl rounded-lg text-black'>verse</span>
