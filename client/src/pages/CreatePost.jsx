@@ -106,7 +106,12 @@ export default function CreatePost() {
                         {
                             imageUploadProgress ? (
                                 <div className='w-16 h-16'>
-                                    <CircularProgressbar value={imageUploadProgress} text={`${imageUploadProgress || 0}%`} />
+                                    <CircularProgressbar value={imageUploadProgress||0} text={`${imageUploadProgress || 0}%`} strokeWidth={5}
+                                        styles={{
+                                            root: { width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 },
+                                            path: { stroke: `rgba(56,176,0,${imageUploadProgress / 100})` },
+                                            text: { fill: 'rgba(56,176,0)', fontSize: '20px' }
+                                        }} />
                                 </div>
                             ) : ('Upload Image')
                         }
