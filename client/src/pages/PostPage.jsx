@@ -61,7 +61,7 @@ export default function PostPage() {
     );
   return (
     <main className='p-3 flex flex-col max-w-6xl mx-auto min-h-screen'>
-      <h1 className='text-3xl mt-10 p-3 text-center font-serif max-w-2xl mx-auto lg:text-4xl'>
+      <h1 className='text-4xl mt-10 p-3 text-center font-serif max-w-4xl mx-auto lg:text-6xl'>
         {post && post.title}
       </h1>
       <Link
@@ -84,16 +84,16 @@ export default function PostPage() {
         </span>
       </div>
       <div
-        className='p-3 max-w-2xl mx-auto w-full post-content'
+        className='p-3 max-w-2xl mx-auto w-full post-content pb-8'
         dangerouslySetInnerHTML={{ __html: post && post.content }}
       ></div>
-      <div className='max-w-4xl mx-auto w-full'>
+      <div className='max-w-4xl mx-auto w-full pb-2'>
         <CallToAction />
       </div>
       <CommentSection postId={post._id} />
 
-      <div className='flex flex-col justify-center items-center mb-5'>
-        <h1 className='text-xl mt-5'>Recent articles</h1>
+      <div className='flex flex-col justify-center items-center mt-4 mb-5 border-t border-slate-500 mx-auto w-full max-w-5xl'>
+        <h1 className='text-2xl font-serif mt-10 pb-6'>Recent articles</h1>
         <div className='flex flex-wrap gap-5 mt-5 justify-center'>
           {recentPosts &&
             recentPosts.map((post) => <PostCard key={post._id} post={post} />)}
