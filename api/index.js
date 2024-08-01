@@ -27,7 +27,11 @@ mongoose
 
 const app = express();
 // changed cross origin
-app.use(cors({ origin: true }));
+app.use(cors({
+    origin: process.env.FRONTEND_URL, // Update with your frontend domain
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  }));
 
 app.use(express.json());
 app.use(cookieParser());
