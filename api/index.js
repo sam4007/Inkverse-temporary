@@ -27,7 +27,7 @@ mongoose
 
 const app = express();
 // changed cross origin
-app.use(cors());
+app.use(cors({ origin: true }));
 
 app.use(express.json());
 app.use(cookieParser());
