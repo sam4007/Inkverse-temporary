@@ -7,7 +7,7 @@ import postRoutes from './routes/post.route.js';
 import commentRoutes from './routes/comment.route.js';
 import cookieParser from 'cookie-parser';
 import path from 'path';
-import cors from 'cors';
+
 
 
 dotenv.config();
@@ -26,12 +26,7 @@ mongoose
     const __dirname = path.resolve();
 
 const app = express();
-// changed cross origin
-app.use(cors({
-    origin: process.env.FRONTEND_URL, // Update with your frontend domain
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-  }));
+
 
 app.use(express.json());
 app.use(cookieParser());
