@@ -39,7 +39,7 @@ export default function DashSidebar() {
     };
 
     return (
-        <Sidebar className='w-full md:w-56 border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] shadow-lg shadow-[rgb(179,179,179)] dark:shadow-[rgb(12,12,12)]'>
+        <Sidebar className='w-full border-[rgb(195,221,253)] dark:border-[rgb(18,18,18)] shadow-lg shadow-[rgb(179,179,179)] dark:shadow-[rgb(12,12,12)] md:w-56'>
             <Sidebar.Items>
                 <Sidebar.ItemGroup className='flex flex-col gap-1'>
                     {currentUser && currentUser.isAdmin && (
