@@ -65,7 +65,7 @@ export default function About() {
             </h2>
 
             <p>
-              We'd love to hear from you! Whether you have a question, feedback, or a story to share, feel free to reach out to us. Contact us at <span className='text-blue-600'>inkverseteam@gmail.com</span> or connect with us on social media.
+              We'd love to hear from you! Whether you have a question, feedback, or a story to share, feel free to reach out to us. Contact us at <span className='text-blue-600'>teaminkverse@gmail.com</span> or connect with us on social media.
             </p>
 
             <p>

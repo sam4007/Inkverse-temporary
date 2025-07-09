@@ -27,7 +27,7 @@ export default function Projects() {
               <li>Why should we choose you as a creator for Inkverse?</li>
             </ul>
             <p>
-              Send your information to <span className='text-blue-600'>inkverseteam@gmail.com</span> with the subject line <span className=' text-blue-600'>"Creator Application"</span>
+              Send your information to <span className='text-blue-600'>teaminkverse@gmail.com</span> with the subject line <span className=' text-blue-600'>"Creator Application"</span>
             </p>
 
             <h2 className='text-3xl font font-bold my-2 underline underline-offset-4 text-slate-600 dark:text-slate-300'>
@@ -75,7 +75,7 @@ export default function Projects() {
             </h2>
 
             <p>
-              For any questions or additional information, please feel free to reach out to us at <span className='text-blue-600'>inkverseteam@gmail.com</span>
+              For any questions or additional information, please feel free to reach out to us at <span className='text-blue-600'>teaminkverse@gmail.com</span>
             </p>
 
             <p>

@@ -41,15 +41,15 @@ export default function FooterCom() {
                         <div>
                             <Footer.Title title='Follow us' className='underline underline-offset-4' />
                             <Footer.LinkGroup col>
-                                <Footer.Link href='https://www.linkedin.com/in/piyush-kumar-793b231b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank' rel='noopener noreferrer'>
+                                <Footer.Link href='https://www.linkedin.com/in/sara-singh-574673267/' target='_blank' rel='noopener noreferrer'>
                                     LinkedIn
                                 </Footer.Link>
 
-                                <Footer.Link href='https://www.instagram.com/_piyushkashyap_?igsh=MTcwbjNsNGhtczlndQ==' target='_blank' rel='noopener noreferrer'>
+                                <Footer.Link href='https://www.instagram.com/saraexclusively?igsh=ZWxvYmhxeXdkbDJq' target='_blank' rel='noopener noreferrer'>
                                     Instagram
                                 </Footer.Link>
 
-                                <Footer.Link href='https://x.com/piyushkashyap__' target='_blank' rel='noopener noreferrer'>
+                                <Footer.Link href='https://x.com/InkverseTeam' target='_blank' rel='noopener noreferrer'>
                                     X
                                 </Footer.Link>
                             </Footer.LinkGroup>
@@ -74,10 +74,10 @@ export default function FooterCom() {
                 <div className="w-full sm:flex sm:items-center sm:justify-between">
                     <Footer.Copyright href='#' by="Ink Co." year={new Date().getFullYear()} />
                     <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
-                        <Footer.Icon href='https://www.linkedin.com/in/piyush-kumar-793b231b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' icon={BsLinkedin} />
-                        <Footer.Icon href='https://github.com/sam4007' icon={BsGithub} />
-                        <Footer.Icon href='https://x.com/piyushkashyap__' icon={BsTwitterX} />
-                        <Footer.Icon href='https://www.instagram.com/_piyushkashyap_' icon={BsInstagram} />
+                        <Footer.Icon href='https://www.linkedin.com/in/sara-singh-574673267/' icon={BsLinkedin} />
+                        <Footer.Icon href='https://github.com/sarasinghrse' icon={BsGithub} />
+                        <Footer.Icon href='https://x.com/InkverseTeam' icon={BsTwitterX} />
+                        <Footer.Icon href='https://www.instagram.com/saraexclusively?igsh=ZWxvYmhxeXdkbDJq' icon={BsInstagram} />
                     </div>
                 </div>
             </div>
