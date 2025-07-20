@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon api/index.js",
     "start": "node api/index.js",
-    "build": "npm ci --omit=dev && cd client && npm ci && npm run build"
+    "build": "npm ci --omit=dev && cd client && npm install --force && npm run build"
   },
   "keywords": [],
   "author": "",
